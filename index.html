@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Team Generator</title>
+    <!-- <link rel="stylesheet" href="/reset.css"> -->
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Random Team Generator</h1>
+    </header>
+    <main>
+        <section class="input">
+            <h2>Please type in the name of the team member and the number of teams required.</h2>
+            <form>
+                <label for="nameInput">Name of Member:</label>
+                <input type="text" name="nameInput" id="nameInput" required>
+
+                <label for="numberOfTeams">Number of teams:</label>
+                <input type="number" min="1" step="1" id="numberOfTeams" >
+
+                <input type="button" id="submit" onclick="enterNameToWaitingList()">
+            </form>
+        </section>
+        <section class="waitingList">
+            <h2>Waiting List:</h2>
+            <div class="witingListContainer"></div>
+        </section>
+        <section class="teams">
+            <h2>Teams</h2>
+            <div class="teamsContainer"></div>
+        </section>
+    </main>
     <script src="/index.js"></script>
 </body>
 </html>

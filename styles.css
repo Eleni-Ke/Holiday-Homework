@@ -1,0 +1,15 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+font-size: 30px;
+margin: 15px auto;
+padding: 10px 15px;
+border-radius: 15px;
+background-color: teal;
+color: aliceblue;
+width: 350px;
+text-align: center;
+}
+
