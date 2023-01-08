@@ -15,23 +15,26 @@
     <main>
         <section class="input">
             <h2>Please type in the name of the team member and the number of teams required.</h2>
-            <form>
-                <label for="nameInput">Name of Member:</label>
-                <input type="text" name="nameInput" id="nameInput" required>
-
+            <div class="numberOfTeamsContainer">
                 <label for="numberOfTeams">Number of teams:</label>
                 <input type="number" min="1" step="1" id="numberOfTeams" >
+                <input type="button" id="submitTeams" onclick="checkConditionsTeam()" value="Confirm number of teams.">
+            </div>
+            <div class="addingNameContainer">
+                <label for="nameInput">Name of Member:</label>
+                <input type="text" name="nameInput" id="nameInput">
+                <input type="button" id="submitName" onclick="checkConditionsName()" value="Add the name to the list.">
+            </div>
 
-                <input type="button" id="submit" onclick="enterNameToWaitingList()">
-            </form>
         </section>
         <section class="waitingList">
             <h2>Waiting List:</h2>
-            <div class="witingListContainer"></div>
+            <ol class="waitingListContainer"></ol>
+            <input type="button" id="addRandomNameToTeam" onclick="addRandomNameToTeam()" value="Add a name to team.">
         </section>
         <section class="teams">
             <h2>Teams</h2>
-            <div class="teamsContainer"></div>
+            <div class="allTeamsContainer"></div>
         </section>
     </main>
     <script src="/index.js"></script>

@@ -11,5 +11,22 @@ background-color: teal;
 color: aliceblue;
 width: 350px;
 text-align: center;
+
+}
+
+section {
+    text-align: center;
+    color: rgb(1, 72, 72);
+}
+
+input[type= "button"] {
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: teal;
+    color: aliceblue;
+    cursor: pointer;
+}
+input[type= "button"]:hover {
+    background-color: rgb(1, 72, 72);
 }
 
