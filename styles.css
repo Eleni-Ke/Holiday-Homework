@@ -1,5 +1,6 @@
 body {
     background-color: aliceblue;
+    margin-top: 100px;
 }
 
 h1 {
@@ -11,6 +12,8 @@ background-color: teal;
 color: aliceblue;
 width: 350px;
 text-align: center;
+border: 1px solid rgb(1, 72, 72);
+text-shadow: 1px 0 0 rgb(1, 72, 72), -1px 0 0 rgb(1, 72, 72), 0 1px 0 rgb(1, 72, 72), 0 -1px 0 rgb(1, 72, 72);
 
 }
 
@@ -30,3 +33,31 @@ input[type= "button"]:hover {
     background-color: rgb(1, 72, 72);
 }
 
+section {
+    margin-bottom: 50px;
+}
+
+/* input section */
+
+.numberOfTeamsContainer {
+    margin-bottom: 10px;
+}
+
+
+/* waitin list container */
+
+/* teams section */
+
+.allTeamsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.teamContainer {
+    background-color: rgba(0, 128, 128, 0.369);
+    width: 30%;
+    margin-bottom: 20px;
+    min-height: 250px;
+}

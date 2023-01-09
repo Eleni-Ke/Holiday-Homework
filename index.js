@@ -60,7 +60,7 @@ const enterNameToWaitingList = () => {
 }
 
 const addRandomNameToTeam = () => {
-    let waitingListArr = document.querySelectorAll(".newName");
+    let waitingListArr = document.querySelectorAll(".waitingListContainer .newName");
     if (waitingListArr.length > 0) {
         let randomNumber = Math.floor(Math.random() * waitingListArr.length);
         let randomNameFromList = waitingListArr[randomNumber];
